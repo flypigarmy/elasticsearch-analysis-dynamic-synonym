@@ -76,3 +76,14 @@ master| 7.x -> master
 * Remote files: Reads out the `Last-Modified` and `ETag` http header. If one of these changes, the synonyms will be reloaded. 
 
 **Note:** File encoding should be an utf-8 text file. 
+
+
+## ElasticSearch 8.0.0 Build Note
+
+1. JDK 17.0
+
+2. modify "pom.xml" file, set project.version = 8.0.0
+
+3. run "mvn clean package"
+
+4. run "mvn -v" to check JDK version, if mvn package was failed
